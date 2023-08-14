@@ -1,0 +1,782 @@
+/* ... your existing styles ... */
+
+.logo-upload {
+    position: absolute;
+    margin-left: 20px;
+   
+  }
+  
+  .logo-label {
+    display: block;
+    width: 200px;
+    height: 120px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px; /* Increase the font size */
+    color: #888888; /* Set the color to grey */
+    position: relative;
+    background-color: whitesmoke
+  }
+  .remove-logo {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .logo-label span {
+   
+    font-size: 20px; 
+    display: block;
+    margin-top: 10px; 
+  }
+  .logo-preview {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+  }
+ .currency-select{
+  background-color: #888888;
+ }
+ .styled-box {
+  background-color: grey;
+  border: 1px solid black;
+  color: black;
+  padding: 10px;
+  display: inline-block; /* Adjust as needed */
+}
+
+.invoice-number-block {
+    display: flex;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: 200px;
+   
+  }
+  
+  .invoice-number-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px 10px;
+    font-size: 20px;
+    line-height: 1;
+    color: #888888;
+    height: 40px;
+    width: 42px;
+    border-right: 1px solid #d3d3d3;
+    border: 1px solid #ccc;
+  }
+  
+  .invoice-number-field {
+    border: 1px solid teal;
+    padding: 10px;
+    font-size: 16px;
+    height: 40px;
+    width: 150px;
+    text-align: right;
+    background-color: transparent;
+    outline: none; /* Remove the outline when focused */
+  }
+  
+  .invoice-title-block {
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 4px;
+     margin-bottom: 1rem;
+    
+    transition: border-color 0.3s ease;
+    opacity: 0.7;
+    align-self: flex-start;
+    height: 3.2rem;
+    margin-right: 1.5rem;
+  }
+  .bill-to-block {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 145px;
+    transition: border-color 0.3s ease;
+    opacity: 0.7;
+    align-self: flex-start;
+  }
+  
+  .invoice-title-block.focused {
+    border-color: gray;
+    opacity: 1;
+    
+  }
+  
+  .invoice-title-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 3rem;
+    text-align: right; 
+  direction: rtl;
+    background-color: transparent;
+  }
+ 
+  
+  .invoice-from-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-left:1rem ;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .invoice-label {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .invoice-input-block {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .invoice-input-block.focused {
+    border-color: teal;
+    transition: border-color 0.3s ease;
+  }
+  
+  .invoice-input-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    text-align: left;
+    direction: ltr;
+    background-color: transparent;
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Set a minimum height */
+    padding: 0.5rem;
+  }
+  
+  
+  
+  .invoice-from-block {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 300px; /* Adjust the width as needed */
+    transition: border-color 0.3s ease;
+    opacity: 0.7; /* Initial opacity */
+    align-self: flex-start; /* Align to the left */
+  }
+  
+  .invoice-from-block.focused {
+    border-color: teal;
+    opacity: 1;
+    background-color: dark whitesmoke;
+  }
+  
+  .invoice-from-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  .bill-to-block {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+    width: 200px;
+    transition: border-color 0.3s ease;
+    opacity: 0.7;
+    align-self: flex-start;
+  }
+  
+  .bill-to-block.focused {
+    border-color: grey;
+    opacity: 1;
+  }
+  
+  .bill-to-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  /*ship to ui*/
+  .ship-to-block {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: 200px;
+    transition: border-color 0.3s ease;
+    opacity: 0.7;
+    align-self: flex-start;
+  }
+  .address-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.2rem;
+  }
+  
+  .ship-to-block.focused {
+    border-color: grey;
+    opacity: 1;
+  }
+  
+  .ship-to-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+
+  
+  .invoice-to-block {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-left: 1rem;
+    width: 200px; /* Adjust the width as needed */
+    transition: border-color 0.3s ease;
+    opacity: 0.7; /* Initial opacity */
+    align-self: flex-start; /* Align to the left */
+  }
+  
+  .invoice-to-block.focused {
+    border-color: teal;
+    opacity: 1;
+    background-color: dark whitesmoke;
+  }
+  
+  .invoice-to-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  .shipping-to-block {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-left: 1rem;
+    width: 200px; /* Adjust the width as needed */
+    transition: border-color 0.3s ease;
+    opacity: 0.7; /* Initial opacity */
+    align-self: flex-start; /* Align to the left */
+  }
+  
+  .invoice-to-block.focused {
+    border-color: teal;
+    opacity: 1;
+    background-color: dark whitesmoke;
+  }
+  
+  .shipping-to-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  .shipping-to-block.focused {
+    border-color: teal;
+    opacity: 1;
+    background-color: dark whitesmoke;
+  }
+ 
+  .defaultL-block {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 200px;
+    transition: border-color 0.3s ease;
+    opacity: 0.7;
+    align-self: flex-start;
+  }
+  
+  .defaultL-block.focused {
+    border-color: grey;
+    opacity: 1;
+  }
+  
+  .defaultL-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  .defaultR-block {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 0.5rem;
+    
+    width: 200px;
+    transition: border-color 0.3s ease;
+    opacity: 0.7;
+    align-self: flex-end;
+    
+  }
+  
+  .defaultR-block.focused {
+    border-color: grey;
+    opacity: 1;
+  }
+  
+  .defaultR-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+    text-align: right; 
+  }
+  .custom-calendar {
+    background-color: #f0f0f0; /* Grey background */
+    color: #333; /* Text color */
+  }
+/* ... your existing styles ... */
+
+.invoiceDate-block {
+  border: 1px solid grey; /* Set the initial border color */
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0rem;
+  width: 200px;
+  transition: border-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.invoiceDate-block.focused {
+  border-color: teal; /* Change border color when focused */
+  opacity: 1;
+}
+
+.invoiceDate-field {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer; /* Add cursor pointer to show it's clickable */
+}
+
+.custom-calendar {
+  border: 1px solid grey; /* Set the border color of the calendar */
+  background-color: white; /* Set the background color of the calendar */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.shipDate-block {
+  border: 1px solid grey; /* Set the initial border color */
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0rem;
+  width: 200px;
+  transition: border-color 0.3s ease;
+  align-self: flex-start;
+}
+.shipDate-block.focused {
+  border-color: teal; /* Change border color when focused */
+  opacity: 1;
+}
+.shipDate-field {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer; /* Add cursor pointer to show it's clickable */
+}
+/* ... rest of your styles ... */
+.customer-name-block {
+  border: 1px solid grey; /* Set the initial border color */
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0rem;
+  width: 200px;
+  transition: border-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.customer-name-block.focused {
+  border-color: teal; /* Change border color when focused */
+  opacity: 1;
+}
+
+.customer-name-field {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer; 
+}
+.address-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+}
+.right-side-container {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align content to the right */
+
+  /* Add any other styling you want */
+}
+.left-side-container {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the right */
+  /* Add any other styling you want */
+}
+
+
+.right-side-container {
+  /* Styles for the right container */
+  flex: 1; /* Allow the container to grow or shrink */
+  /* ... */
+}
+
+.address-row1 {
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  border-radius: 4px;
+  
+}
+.item-block {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  /* Add margin from top */
+  border: 2px solid grey; /* Add grey border */
+  transition: background-color 0.3s, border-color 0.3s; /* Add transition effect */
+  width: 50%; 
+}
+
+.item-block.focused {
+  border-color: grey;
+  background-color: #888888; /* Change border color when focused */
+}
+
+.item-field {
+  flex: 1;
+  background-color: grey;
+  color: white; /* Change text color to white */
+  border: none;
+  outline: none;
+}
+.quantity-block {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  /* Add margin from top */
+  border: 2px solid grey; /* Add grey border */
+  transition: background-color 0.3s, border-color 0.3s; /* Add transition effect */
+  width: 10%; 
+}
+
+.quantity-block.focused {
+  border-color: grey;
+  background-color: #888888; /* Change border color when focused */
+}
+
+.quantity-field {
+  flex: 1;
+  background-color: grey;
+  color: white; /* Change text color to white */
+  border: none;
+  outline: none;
+}
+.price-block {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  /* Add margin from top */
+  border: 2px solid grey; /* Add grey border */
+  transition: background-color 0.3s, border-color 0.3s; /* Add transition effect */
+  width: 20%; 
+}
+
+.price-block.focused {
+  border-color: grey;
+  background-color: #888888; /* Change border color when focused */
+}
+
+.price-field {
+  flex: 1;
+  background-color: grey;
+  color: white; /* Change text color to white */
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.amount-block {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  /* Add margin from top */
+  border: 2px solid grey; /* Add grey border */
+  transition: background-color 0.3s, border-color 0.3s; /* Add transition effect */
+  width: 20%; 
+}
+
+.amount-block.focused {
+  border-color: grey;
+  background-color: #888888; /* Change border color when focused */
+}
+
+.amount-field {
+  flex: 1;
+  background-color: grey;
+  color: white; /* Change text color to white */
+  border: none;
+  outline: none;
+  text-align: right;
+}
+
+.item1-block {
+  border: 1px solid grey; /* Set the initial border color */
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 50%; 
+}
+
+
+.item1-block.focused {
+  border-color: teal;
+  opacity: 1;
+  background-color: dark whitesmoke;
+}
+
+.item1-field {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.price1-block {
+  border: 1px solid grey; /* Set the initial border color */
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 20%; 
+}
+
+
+.price1-block.focused {
+  border-color: teal;
+  opacity: 1;
+  background-color: dark whitesmoke;
+}
+
+.price1-field {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.quantity1-block {
+  border: 1px solid grey; /* Set the initial border color */
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 10%; 
+}
+
+
+.quantity1-block.focused {
+  border-color: teal;
+  opacity: 1;
+  background-color: dark whitesmoke;
+}
+
+.quantity1-field {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.amount1-block {
+  border: 1px solid grey; /* Set the initial border color */
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 18%; 
+}
+
+
+.amount1-block.focused {
+  border-color: teal;
+  opacity: 1;
+  background-color: dark whitesmoke;
+}
+
+.amount1-field {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.default2-block {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  width: 150px;
+  height: 35px;
+  transition: border-color 0.3s ease;
+  opacity: 0.7;
+  align-self: flex-start;
+}
+
+.default2-block.focused {
+  border-color: grey;
+  opacity: 1;
+}
+
+.default2-field {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.default3-block {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-left: 1rem;
+  width: 420px; /* Adjust the width as needed */
+  height: 70px;
+  transition: border-color 0.3s ease;
+  opacity: 0.7; /* Initial opacity */
+  align-self: flex-start; /* Align to the left */
+}
+
+.default3-block.focused {
+  border-color: teal;
+  opacity: 1;
+  background-color: dark whitesmoke;
+}
+
+.default3-field {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.amountpaid-block {
+  border: 1px solid grey; /* Set the initial border color */
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 10rem; 
+}
+
+
+.amountpaid-block.focused {
+  border-color: teal;
+  opacity: 1;
+  background-color: dark whitesmoke;
+}
+
+.amountpaid-field {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.toggle-button-container {
+  display: flex;
+  justify-content: flex-end; /* This will align the toggle-buttons to the right */
+  margin-top: 10px; /* Add some margin for spacing */
+}
+
+.toggle-button-row {
+  text-align: left;
+  align-items: right; /* Vertically center the button content */
+  margin-left: 1rem;
+  justify-content: flex-start;
+  
+   /* Add some right margin to separate the buttons */
+}
+.generate-pdf-button {
+  position: absolute;
+  top: 7rem; /* Adjust the value as needed */
+  right: 2rem; /* Adjust the value as needed */
+  
+  border-radius: 4px;
+}
+.currency-select{
+  position: absolute;
+  top: 12rem; /* Adjust the value as needed */
+  right: 10px; /* Adjust the value as needed */
+  background-color: grey;
+  border-radius: 4px;
+  height: 2px;
+ 
+  
+   /* Adjust the value as needed */
+  
+  
+}
